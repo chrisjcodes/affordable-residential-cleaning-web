@@ -26,7 +26,7 @@ export default function Contact() {
                 Get in Touch
               </Text>
               <Heading size={{ initial: '6', md: '7' }}>
-                Request a Free Quote
+                Schedule a Free Estimate
               </Heading>
               <Text size="2" color="gray" style={{ lineHeight: 1.6 }}>
                 Fill out the form and we'll get back to you within 24 hours.
