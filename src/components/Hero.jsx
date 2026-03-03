@@ -13,14 +13,15 @@ export default function Hero() {
     >
       {/* Header row: logo left, nav links right */}
       <style>{`
-        .hero-header { padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; }
+        .hero-header { padding: 20px 24px; display: flex; align-items: center; justify-content: center; }
         .hero-logo { height: 90px; width: auto; }
-        .hero-nav { display: flex; align-items: center; gap: 48px; }
+        .hero-nav { display: none; }
         .hero-nav a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 20px; font-weight: 500; transition: color 0.15s; }
         .hero-nav a:hover { color: white; }
         @media (min-width: 768px) {
-          .hero-header { padding: 24px 36px; }
+          .hero-header { padding: 24px 36px; justify-content: space-between; }
           .hero-logo { height: 120px; }
+          .hero-nav { display: flex; align-items: center; gap: 48px; }
         }
       `}</style>
       <div className="hero-header">
