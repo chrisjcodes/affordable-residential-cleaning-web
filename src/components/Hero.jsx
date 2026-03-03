@@ -6,7 +6,7 @@ export default function Hero() {
     <section
       style={{
         background: 'linear-gradient(160deg, #000000 0%, #1a1a1a 100%)',
-        minHeight: '85vh',
+        minHeight: '75vh',
         display: 'flex',
         flexDirection: 'column',
       }}
@@ -14,7 +14,7 @@ export default function Hero() {
       {/* Header row: logo left, nav links right */}
       <style>{`
         .hero-header { padding: 20px 24px; display: flex; align-items: center; justify-content: center; }
-        .hero-logo { height: 90px; width: auto; }
+        .hero-logo { height: 110px; width: auto; }
         .hero-nav { display: none; }
         .hero-nav a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 20px; font-weight: 500; transition: color 0.15s; }
         .hero-nav a:hover { color: white; }
@@ -69,7 +69,7 @@ export default function Hero() {
                 asChild
               >
                 <a href="#contact" style={{ color: 'white', textDecoration: 'none' }}>
-                  Get a Free Quote
+                  Schedule a Free Estimate
                 </a>
               </Button>
               <Button
