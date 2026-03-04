@@ -5,14 +5,14 @@ const testimonials = [
     name: 'Bruce Scott',
     location: 'Sarasota, FL',
     quote: <>
-      I have been fortunate to have Affordable Residential Cleaning care for my home for over 10 years now, and I can honestly say they are one of the most <strong>reliable and hardworking</strong> teams I've ever known. They <strong>show up on time every single time</strong>, work with efficiency, and always leave my house <strong>spotless</strong>. I never have to ask them to pay extra attention to certain areas; they just notice what needs doing and take care of it. From cleaning the kitchen to keeping the bathrooms sparkling and dusting places most people would miss, their <strong>attention to detail is exceptional</strong>. Beyond the excellent cleaning, Affordable Residential Cleaning is <strong>trustworthy</strong> and a pleasure to have in the house. After a decade, they still approach every visit with the same <strong>care and pride</strong> in their work. I recommend Affordable Residential Cleaning <strong>without hesitation</strong> to anyone looking for a <strong>dependable, thorough</strong>, and genuinely good team to care for their home. They're <strong>the real deal</strong>.
+      I have been fortunate to have Affordable Residential Cleaning care for my home for over 10 years now, and I can honestly say they are one of the most <strong>reliable and hardworking</strong> teams I've ever known. They <strong>show up on time every single time</strong>, work with efficiency, and always leave my house <strong>spotless</strong>. I never have to ask them to pay extra attention to certain areas; they just notice what needs doing and take care of it. From cleaning the kitchen to keeping the bathrooms sparkling and dusting places most people would miss, their <strong>attention to detail is exceptional</strong>. Beyond the excellent cleaning, Affordable Residential Cleaning is <strong>trustworthy</strong> and a pleasure to have in the house. After a decade, they still approach every visit with the same care and pride in their work. I recommend Affordable Residential Cleaning without hesitation to anyone looking for a <strong>dependable, thorough</strong>, and genuinely good team to care for their home.
     </>,
   },
   {
     name: 'Liz Steiner',
     location: 'Sarasota, FL',
     quote: <>
-      Affordable Residential Cleaning has been cleaning my home for over 15 years, and they are <strong>simply the best</strong>. They are incredibly <strong>trustworthy, dependable, and thorough</strong> — I <strong>never hesitate</strong> to have them clean while I'm away. It is no surprise their client base in the Isles has grown tremendously by <strong>word of mouth</strong>. <strong>Highly recommended</strong>, and their rates are <strong>very reasonable</strong>!
+      Affordable Residential Cleaning has been cleaning my home for over 15 years, and they are <strong>simply the best</strong>. They are incredibly <strong>trustworthy, dependable, and thorough</strong> — I never hesitate to have them clean while I'm away. It is no surprise their client base in the Isles has grown tremendously by word of mouth. <strong>Highly recommended</strong>, and their rates are <strong>very reasonable</strong>!
     </>,
   },
   {
