@@ -56,8 +56,8 @@ export default function Hero() {
               align="center"
               style={{ color: 'rgba(255,255,255,0.65)', maxWidth: '480px', lineHeight: 1.6 }}
             >
-              Professional residential cleaning you can trust — reliable, thorough,
-              and priced right for every budget.
+              Serving Sarasota County with professional residential cleaning you can
+              trust — reliable, thorough, and priced right for every budget.
             </Text>
             <Flex
               gap={{ initial: '3', md: '4' }}
