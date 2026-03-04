@@ -1,9 +1,31 @@
+import { useState } from 'react'
 import { Box, Container, Flex, Grid, Heading, Text, TextField, TextArea, Button } from '@radix-ui/themes'
 
-// Replace with your Formspree endpoint or Netlify Forms to receive submissions on static hosting
-const FORM_ACTION = 'mailto:lizjcleans@gmail.com'
-
 export default function Contact() {
+  const [fields, setFields] = useState({ name: '', phone: '', email: '', service: '', message: '' })
+  const [status, setStatus] = useState('idle') // idle | sending | success | error
+
+  function handleChange(e) {
+    setFields(f => ({ ...f, [e.target.name]: e.target.value }))
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault()
+    setStatus('sending')
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(fields),
+      })
+      if (!res.ok) throw new Error()
+      setStatus('success')
+      setFields({ name: '', phone: '', email: '', service: '', message: '' })
+    } catch {
+      setStatus('error')
+    }
+  }
+
   return (
     <Box
       id="contact"
@@ -65,51 +87,79 @@ export default function Contact() {
               padding: '32px',
             }}
           >
-            <form action={FORM_ACTION} method="POST">
-              <Flex direction="column" gap="4">
-                <Grid columns={{ initial: '1', sm: '2' }} gap="3">
-                  <Flex direction="column" gap="1">
-                    <Text size="2" weight="medium">Name</Text>
-                    <TextField.Root name="name" placeholder="Jane Smith" required size="3" />
-                  </Flex>
-                  <Flex direction="column" gap="1">
-                    <Text size="2" weight="medium">Phone</Text>
-                    <TextField.Root name="phone" type="tel" placeholder="(555) 000-0000" size="3" />
-                  </Flex>
-                </Grid>
-                <Flex direction="column" gap="1">
-                  <Flex align="center" gap="2">
-                    <Text size="2" weight="medium">Email</Text>
-                    <Text size="1" color="gray">(optional)</Text>
-                  </Flex>
-                  <TextField.Root name="email" type="email" placeholder="jane@example.com" size="3" />
-                </Flex>
-                <Flex direction="column" gap="1">
-                  <Text size="2" weight="medium">Service Needed</Text>
-                  <TextField.Root
-                    name="service"
-                    placeholder="e.g. Standard clean, deep clean, move-out…"
-                    size="3"
-                  />
-                </Flex>
-                <Flex direction="column" gap="1">
-                  <Text size="2" weight="medium">Message</Text>
-                  <TextArea
-                    name="message"
-                    placeholder="Tell us about your home and when you'd like service…"
-                    rows={4}
-                    size="3"
-                  />
-                </Flex>
+            {status === 'success' ? (
+              <Flex direction="column" align="center" justify="center" gap="3" style={{ minHeight: '300px' }}>
+                <Text size="6">✓</Text>
+                <Heading size="5">Message Sent!</Heading>
+                <Text size="2" color="gray" align="center">
+                  Thanks {fields.name || 'for reaching out'}! We'll get back to you by the next business day.
+                </Text>
                 <Button
-                  type="submit"
-                  size="3"
-                  style={{ backgroundColor: 'var(--brand)', cursor: 'pointer', color: 'white' }}
+                  variant="soft"
+                  size="2"
+                  style={{ cursor: 'pointer', marginTop: '8px' }}
+                  onClick={() => setStatus('idle')}
                 >
-                  Send Message
+                  Send another message
                 </Button>
               </Flex>
-            </form>
+            ) : (
+              <form onSubmit={handleSubmit}>
+                <Flex direction="column" gap="4">
+                  <Grid columns={{ initial: '1', sm: '2' }} gap="3">
+                    <Flex direction="column" gap="1">
+                      <Text size="2" weight="medium">Name</Text>
+                      <TextField.Root name="name" placeholder="Jane Smith" required size="3" value={fields.name} onChange={handleChange} />
+                    </Flex>
+                    <Flex direction="column" gap="1">
+                      <Text size="2" weight="medium">Phone</Text>
+                      <TextField.Root name="phone" type="tel" placeholder="(941) 000-0000" required size="3" value={fields.phone} onChange={handleChange} />
+                    </Flex>
+                  </Grid>
+                  <Flex direction="column" gap="1">
+                    <Flex align="center" gap="2">
+                      <Text size="2" weight="medium">Email</Text>
+                      <Text size="1" color="gray">(optional)</Text>
+                    </Flex>
+                    <TextField.Root name="email" type="email" placeholder="jane@example.com" size="3" value={fields.email} onChange={handleChange} />
+                  </Flex>
+                  <Flex direction="column" gap="1">
+                    <Text size="2" weight="medium">Service Needed</Text>
+                    <TextField.Root
+                      name="service"
+                      placeholder="e.g. Premium clean, pre-occupancy, pet sitting…"
+                      size="3"
+                      value={fields.service}
+                      onChange={handleChange}
+                    />
+                  </Flex>
+                  <Flex direction="column" gap="1">
+                    <Text size="2" weight="medium">Message</Text>
+                    <TextArea
+                      name="message"
+                      placeholder="Tell us about your home and when you'd like service…"
+                      rows={4}
+                      size="3"
+                      value={fields.message}
+                      onChange={handleChange}
+                    />
+                  </Flex>
+                  {status === 'error' && (
+                    <Text size="2" style={{ color: 'var(--brand)' }}>
+                      Something went wrong — please call or email us directly.
+                    </Text>
+                  )}
+                  <Button
+                    type="submit"
+                    size="3"
+                    disabled={status === 'sending'}
+                    style={{ backgroundColor: 'var(--brand)', cursor: 'pointer', color: 'white', opacity: status === 'sending' ? 0.7 : 1 }}
+                  >
+                    {status === 'sending' ? 'Sending…' : 'Send Message'}
+                  </Button>
+                </Flex>
+              </form>
+            )}
           </Box>
         </Flex>
       </Container>

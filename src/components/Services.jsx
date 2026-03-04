@@ -15,9 +15,14 @@ const serviceGroups = [
           'Regular scheduled cleanings — weekly, bi-weekly, or monthly — so your home stays consistently clean without you having to think about it.',
       },
       {
+        title: 'Move-In / Move-Out Clean',
+        description:
+          'Transitioning between homes? We provide a thorough premium clean to leave the space spotless for new occupants or help you close out your old one the right way.',
+      },
+      {
         title: 'Pre-Occupancy Clean',
         description:
-          'Moving in or out, or returning to your vacation home from up north? We provide the same thorough premium clean to leave the space spotless and ready for you.',
+          'Returning to your vacation home from up north? We\'ll have it fresh, clean, and ready for you before you arrive — so you can walk in and relax.',
       },
     ],
   },
