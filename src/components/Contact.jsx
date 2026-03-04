@@ -1,7 +1,7 @@
 import { Box, Container, Flex, Grid, Heading, Text, TextField, TextArea, Button } from '@radix-ui/themes'
 
 // Replace with your Formspree endpoint or Netlify Forms to receive submissions on static hosting
-const FORM_ACTION = 'mailto:hello@example.com'
+const FORM_ACTION = 'mailto:lizjcleans@gmail.com'
 
 export default function Contact() {
   return (
@@ -36,8 +36,8 @@ export default function Contact() {
 
             <Flex direction="column" gap="4">
               {[
-                { label: 'Phone', value: '(555) 555-0100', href: 'tel:+15555550100' },
-                { label: 'Email', value: 'hello@example.com', href: 'mailto:hello@example.com' },
+                { label: 'Phone', value: '(941) 780-0576', href: 'tel:+19417800576' },
+                { label: 'Email', value: 'lizjcleans@gmail.com', href: 'mailto:lizjcleans@gmail.com' },
                 { label: 'Hours', value: 'Mon – Fri, 8am – 4pm', href: null },
               ].map(({ label, value, href }) => (
                 <Box

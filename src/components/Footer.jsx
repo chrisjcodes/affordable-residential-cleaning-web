@@ -21,13 +21,13 @@ export default function Footer() {
           </Text>
           <Flex gap="4">
             <Text size="2">
-              <a href="tel:+15555550100" style={{ color: 'var(--gray-10)', textDecoration: 'none' }}>
-                (555) 555-0100
+              <a href="tel:+19417800576" style={{ color: 'var(--gray-10)', textDecoration: 'none' }}>
+                (941) 780-0576
               </a>
             </Text>
             <Text size="2">
-              <a href="mailto:hello@example.com" style={{ color: 'var(--gray-10)', textDecoration: 'none' }}>
-                hello@example.com
+              <a href="mailto:lizjcleans@gmail.com" style={{ color: 'var(--gray-10)', textDecoration: 'none' }}>
+                lizjcleans@gmail.com
               </a>
             </Text>
           </Flex>
