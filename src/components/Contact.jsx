@@ -29,7 +29,7 @@ export default function Contact() {
                 Schedule a Free Estimate
               </Heading>
               <Text size="2" color="gray" style={{ lineHeight: 1.6 }}>
-                Fill out the form and we'll get back to you within 24 hours.
+                Fill out the form and we'll get back to you by the next business day.
                 Or reach us directly:
               </Text>
             </Flex>
@@ -78,8 +78,11 @@ export default function Contact() {
                   </Flex>
                 </Grid>
                 <Flex direction="column" gap="1">
-                  <Text size="2" weight="medium">Email</Text>
-                  <TextField.Root name="email" type="email" placeholder="jane@example.com" required size="3" />
+                  <Flex align="center" gap="2">
+                    <Text size="2" weight="medium">Email</Text>
+                    <Text size="1" color="gray">(optional)</Text>
+                  </Flex>
+                  <TextField.Root name="email" type="email" placeholder="jane@example.com" size="3" />
                 </Flex>
                 <Flex direction="column" gap="1">
                   <Text size="2" weight="medium">Service Needed</Text>
