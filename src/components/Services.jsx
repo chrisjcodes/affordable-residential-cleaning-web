@@ -32,7 +32,7 @@ const serviceGroups = [
       {
         title: 'Pet Sitting',
         description:
-          'Daily care for pets that don\'t require walking or overnight stays — cats, caged animals, reptiles, birds, fish, and more. Reliable and attentive while you\'re away.',
+          'Daily care for pets that don\'t require walking or overnight stays — cats, caged animals, reptiles, birds, fish, and more. We love puppies, but they\'re just not our specialty!',
       },
     ],
   },
