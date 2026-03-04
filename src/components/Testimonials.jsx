@@ -3,23 +3,27 @@ import { Box, Container, Flex, Grid, Heading, Text, Card } from '@radix-ui/theme
 const testimonials = [
   {
     name: 'Bruce Scott',
-    quote:
-      "I have been fortunate to have Affordable Residential Cleaning care for my home for over 10 years now, and I can honestly say they are one of the most reliable and hardworking teams I've ever known. They show up on time every single time, work with efficiency, and always leave my house spotless. I never have to ask them to pay extra attention to certain areas; they just notice what needs doing and take care of it. From cleaning the kitchen to keeping the bathrooms sparkling and dusting places most people would miss, their attention to detail is exceptional. Beyond the excellent cleaning, Affordable Residential Cleaning is trustworthy and a pleasure to have in the house. After a decade, they still approach every visit with the same care and pride in their work. I recommend Affordable Residential Cleaning without hesitation to anyone looking for a dependable, thorough, and genuinely good team to care for their home. They're the real deal.",
+    quote: <>
+      I have been fortunate to have Affordable Residential Cleaning care for my home for over 10 years now, and I can honestly say they are one of the most <strong>reliable and hardworking</strong> teams I've ever known. They <strong>show up on time every single time</strong>, work with efficiency, and always leave my house <strong>spotless</strong>. I never have to ask them to pay extra attention to certain areas; they just notice what needs doing and take care of it. From cleaning the kitchen to keeping the bathrooms sparkling and dusting places most people would miss, their <strong>attention to detail is exceptional</strong>. Beyond the excellent cleaning, Affordable Residential Cleaning is <strong>trustworthy</strong> and a pleasure to have in the house. After a decade, they still approach every visit with the same <strong>care and pride</strong> in their work. I recommend Affordable Residential Cleaning <strong>without hesitation</strong> to anyone looking for a <strong>dependable, thorough</strong>, and genuinely good team to care for their home. They're <strong>the real deal</strong>.
+    </>,
   },
   {
     name: 'Liz Steiner',
-    quote:
-      "Affordable Residential Cleaning has been cleaning my home for over 15 years, and they are simply the best. They are incredibly trustworthy, dependable, and thorough — I never hesitate to have them clean while I'm away. It is no surprise their client base in the Isles has grown tremendously by word of mouth. Highly recommended, and their rates are very reasonable!",
+    quote: <>
+      Affordable Residential Cleaning has been cleaning my home for over 15 years, and they are <strong>simply the best</strong>. They are incredibly <strong>trustworthy, dependable, and thorough</strong> — I <strong>never hesitate</strong> to have them clean while I'm away. It is no surprise their client base in the Isles has grown tremendously by <strong>word of mouth</strong>. <strong>Highly recommended</strong>, and their rates are <strong>very reasonable</strong>!
+    </>,
   },
   {
     name: 'Faye Adkins',
-    quote:
-      "I can truthfully say I am very pleased with Affordable Residential Cleaning. What a great job they and their crew do on cleaning my home. They have been working for me for going on 2 years. Couldn't do without them.",
+    quote: <>
+      I can truthfully say I am <strong>very pleased</strong> with Affordable Residential Cleaning. What a <strong>great job</strong> they and their crew do on cleaning my home. They have been working for me for going on 2 years. <strong>Couldn't do without them.</strong>
+    </>,
   },
   {
     name: 'Judy Drohlich',
-    quote:
-      "I have been using Affordable Residential Cleaning for almost a year now. They have been great in every way. The girls are very energetic and power through so you get your house back quickly and clean. I also have dogs and they are wonderful with them.",
+    quote: <>
+      I have been using Affordable Residential Cleaning for almost a year now. They have been <strong>great in every way</strong>. The girls are <strong>very energetic</strong> and <strong>power through</strong> so you get your house back <strong>quickly and clean</strong>. I also have dogs and they are <strong>wonderful</strong> with them.
+    </>,
   },
 ]
 
