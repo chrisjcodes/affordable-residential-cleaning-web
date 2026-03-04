@@ -30,9 +30,9 @@ const serviceGroups = [
           'Peace of mind while you\'re away — we check running water, flush toilets, and start your car to maintain the battery. Tailored to your needs.',
       },
       {
-        title: 'Cat Sitting',
+        title: 'Pet Sitting',
         description:
-          'Daily feeding and litter care for your cats while you\'re away. Reliable, attentive, and handled with the same care we bring to every home.',
+          'Daily care for pets that don\'t require walking or overnight stays — cats, caged animals, reptiles, birds, fish, and more. Reliable and attentive while you\'re away.',
       },
     ],
   },
