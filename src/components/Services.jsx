@@ -65,12 +65,13 @@ export default function Services() {
               >
                 {group.group}
               </Text>
-              <Grid
-                columns={{ initial: '1', sm: '2', md: '3' }}
-                gap={{ initial: '4', md: '5' }}
-              >
+              <Flex wrap="wrap" gap={{ initial: '4', md: '5' }} justify="center">
                 {group.services.map((service) => (
-                  <Card key={service.title} size="2" style={{ height: '100%' }}>
+                  <Card
+                    key={service.title}
+                    size="2"
+                    style={{ flex: '1 1 260px', maxWidth: '360px' }}
+                  >
                     <Flex direction="column" gap="3">
                       <Heading size="4">{service.title}</Heading>
                       <Text size="2" color="gray" style={{ lineHeight: 1.6 }}>
@@ -79,7 +80,7 @@ export default function Services() {
                     </Flex>
                   </Card>
                 ))}
-              </Grid>
+              </Flex>
             </Flex>
           ))}
         </Flex>
