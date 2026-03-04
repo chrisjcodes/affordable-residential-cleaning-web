@@ -4,22 +4,22 @@ const testimonials = [
   {
     name: 'Bruce Scott',
     quote:
-      "I have been fortunate to have Liz cleaning my home for over 10 years now, and I can honestly say she is one of the most reliable and hardworking people I've ever known. She shows up on time every single time, works with efficiency, and always leaves my house spotless. I never have to ask her to pay extra attention to certain areas; she just notices what needs doing and takes care of it. From cleaning the kitchen to keeping the bathrooms sparkling and dusting places most people would miss, her attention to detail is exceptional. Beyond the excellent cleaning, Liz is kind, trustworthy, and a pleasure to have in the house. She's respectful of our space and our things, and I've never once worried about anything when she's here. After a decade, she still approaches every visit with the same care and pride in her work. I recommend Liz without hesitation to anyone looking for a dependable, thorough, and genuinely good person to care for their home. She's the real deal.",
+      "I have been fortunate to have Affordable Residential Cleaning care for my home for over 10 years now, and I can honestly say they are one of the most reliable and hardworking teams I've ever known. They show up on time every single time, work with efficiency, and always leave my house spotless. I never have to ask them to pay extra attention to certain areas; they just notice what needs doing and take care of it. From cleaning the kitchen to keeping the bathrooms sparkling and dusting places most people would miss, their attention to detail is exceptional. Beyond the excellent cleaning, Affordable Residential Cleaning is trustworthy and a pleasure to have in the house. After a decade, they still approach every visit with the same care and pride in their work. I recommend Affordable Residential Cleaning without hesitation to anyone looking for a dependable, thorough, and genuinely good team to care for their home. They're the real deal.",
   },
   {
     name: 'Liz Steiner',
     quote:
-      "Liz Johnson has been cleaning my home for over 15 years, and she is simply the best. She is incredibly trustworthy, dependable, and thorough — I never hesitate to have her clean while I'm away. It is no surprise her client base in the Isles has grown tremendously by word of mouth. Highly recommended, and her rates are very reasonable!",
+      "Affordable Residential Cleaning has been cleaning my home for over 15 years, and they are simply the best. They are incredibly trustworthy, dependable, and thorough — I never hesitate to have them clean while I'm away. It is no surprise their client base in the Isles has grown tremendously by word of mouth. Highly recommended, and their rates are very reasonable!",
   },
   {
     name: 'Faye Adkins',
     quote:
-      "I can truthfully say I am very pleased with Liz at Affordable Residential. What a great job she and her crew does on cleaning my home. She has been working for me for going on 2 years. Couldn't do without them.",
+      "I can truthfully say I am very pleased with Affordable Residential Cleaning. What a great job they and their crew do on cleaning my home. They have been working for me for going on 2 years. Couldn't do without them.",
   },
   {
     name: 'Judy Drohlich',
     quote:
-      "I have been using Liz for my housekeeper for almost a year now. She has been great in every way. The girls are very energetic and power through so you get your house back quickly and clean. I also have dogs and they are wonderful with them.",
+      "I have been using Affordable Residential Cleaning for almost a year now. They have been great in every way. The girls are very energetic and power through so you get your house back quickly and clean. I also have dogs and they are wonderful with them.",
   },
 ]
 
