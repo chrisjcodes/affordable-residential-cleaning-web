@@ -1,30 +1,40 @@
 import { Box, Container, Flex, Grid, Heading, Text, Card } from '@radix-ui/themes'
 
-const services = [
+const serviceGroups = [
   {
-    title: 'Premium Clean',
-    description:
-      'Dusting including picture frames, vacuuming, mopping, bathrooms, kitchen including cabinet fronts and inside microwave, ceiling fans, and change of linens.',
+    group: 'Cleaning Services',
+    services: [
+      {
+        title: 'Premium Clean',
+        description:
+          'Dusting including picture frames, vacuuming, mopping, bathrooms, kitchen including cabinet fronts and inside microwave, ceiling fans, and change of linens.',
+      },
+      {
+        title: 'Recurring Service',
+        description:
+          'Regular scheduled cleanings — weekly, bi-weekly, or monthly — so your home stays consistently clean without you having to think about it.',
+      },
+      {
+        title: 'Pre-Occupancy Clean',
+        description:
+          'Moving in or out, or returning to your vacation home from up north? We provide the same thorough premium clean to leave the space spotless and ready for you.',
+      },
+    ],
   },
   {
-    title: 'Pre-Occupancy Clean',
-    description:
-      'Moving in or out, or returning to your vacation home from up north? We provide the same thorough premium clean to leave the space spotless and ready for you.',
-  },
-  {
-    title: 'Seasonal Home Checking',
-    description:
-      'Peace of mind while you\'re away — we check running water, flush toilets, and start your car to maintain the battery. Tailored to your needs.',
-  },
-  {
-    title: 'Cat Sitting',
-    description:
-      'Daily feeding and litter care for your cats while you\'re away. Reliable, attentive, and handled with the same care we bring to every home.',
-  },
-  {
-    title: 'Recurring Service',
-    description:
-      'Regular scheduled cleanings — weekly, bi-weekly, or monthly — so your home stays consistently clean without you having to think about it.',
+    group: 'Home & Pet Care',
+    services: [
+      {
+        title: 'Seasonal Home Checking',
+        description:
+          'Peace of mind while you\'re away — we check running water, flush toilets, and start your car to maintain the battery. Tailored to your needs.',
+      },
+      {
+        title: 'Cat Sitting',
+        description:
+          'Daily feeding and litter care for your cats while you\'re away. Reliable, attentive, and handled with the same care we bring to every home.',
+      },
+    ],
   },
 ]
 
@@ -32,7 +42,7 @@ export default function Services() {
   return (
     <Box id="services" style={{ background: 'linear-gradient(160deg, #2d0017 0%, #E7007D 100%)', paddingTop: '80px', paddingBottom: '80px' }}>
       <Container size="4" px={{ initial: '4', md: '6' }}>
-        <Flex direction="column" align="center" gap="2" style={{ marginBottom: '48px' }}>
+        <Flex direction="column" align="center" gap="2" style={{ marginBottom: '56px' }}>
           <Text
             size="2"
             weight="medium"
@@ -44,21 +54,35 @@ export default function Services() {
             Our Services
           </Heading>
         </Flex>
-        <Grid
-          columns={{ initial: '1', sm: '2', md: '3' }}
-          gap={{ initial: '4', md: '5' }}
-        >
-          {services.map((service) => (
-            <Card key={service.title} size="2" style={{ height: '100%' }}>
-              <Flex direction="column" gap="3">
-                <Heading size="4">{service.title}</Heading>
-                <Text size="2" color="gray" style={{ lineHeight: 1.6 }}>
-                  {service.description}
-                </Text>
-              </Flex>
-            </Card>
+
+        <Flex direction="column" gap="8">
+          {serviceGroups.map((group) => (
+            <Flex key={group.group} direction="column" gap="4">
+              <Text
+                size="2"
+                weight="medium"
+                style={{ color: 'rgba(255,255,255,0.5)', letterSpacing: '0.06em', textTransform: 'uppercase', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '10px' }}
+              >
+                {group.group}
+              </Text>
+              <Grid
+                columns={{ initial: '1', sm: '2', md: '3' }}
+                gap={{ initial: '4', md: '5' }}
+              >
+                {group.services.map((service) => (
+                  <Card key={service.title} size="2" style={{ height: '100%' }}>
+                    <Flex direction="column" gap="3">
+                      <Heading size="4">{service.title}</Heading>
+                      <Text size="2" color="gray" style={{ lineHeight: 1.6 }}>
+                        {service.description}
+                      </Text>
+                    </Flex>
+                  </Card>
+                ))}
+              </Grid>
+            </Flex>
           ))}
-        </Grid>
+        </Flex>
       </Container>
     </Box>
   )
