@@ -14,10 +14,7 @@ export default async function handler(req, res) {
   }
 
   const { data, error } = await resend.emails.send({
-    // onboarding@resend.dev can only deliver to your Resend account's own email.
-    // To send to lizjcleans@gmail.com, verify a domain at resend.com/domains
-    // then change this to e.g. noreply@yourdomain.com
-    from: 'Affordable Residential Cleaning <onboarding@resend.dev>',
+    from: 'Affordable Residential Cleaning <noreply@affordableresidentialcleaning.com>',
     to: 'lizjcleans@gmail.com',
     reply_to: email || undefined,
     subject: `New quote request from ${name}`,
