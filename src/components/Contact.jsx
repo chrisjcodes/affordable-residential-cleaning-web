@@ -109,11 +109,11 @@ export default function Contact() {
                   <Grid columns={{ initial: '1', sm: '2' }} gap="3">
                     <Flex direction="column" gap="1">
                       <Text size="2" weight="medium">Name</Text>
-                      <TextField.Root name="name" placeholder="Jane Smith" required size="3" value={fields.name} onChange={handleChange} />
+                      <TextField.Root name="name" placeholder="Your full name" required size="3" value={fields.name} onChange={handleChange} />
                     </Flex>
                     <Flex direction="column" gap="1">
                       <Text size="2" weight="medium">Phone</Text>
-                      <TextField.Root name="phone" type="tel" placeholder="(941) 000-0000" required size="3" value={fields.phone} onChange={handleChange} />
+                      <TextField.Root name="phone" type="tel" placeholder="Your phone number" required size="3" value={fields.phone} onChange={handleChange} />
                     </Flex>
                   </Grid>
                   <Flex direction="column" gap="1">
@@ -121,13 +121,13 @@ export default function Contact() {
                       <Text size="2" weight="medium">Email</Text>
                       <Text size="1" color="gray">(optional)</Text>
                     </Flex>
-                    <TextField.Root name="email" type="email" placeholder="jane@example.com" size="3" value={fields.email} onChange={handleChange} />
+                    <TextField.Root name="email" type="email" placeholder="Your email address" size="3" value={fields.email} onChange={handleChange} />
                   </Flex>
                   <Flex direction="column" gap="1">
                     <Text size="2" weight="medium">Service Needed</Text>
                     <TextField.Root
                       name="service"
-                      placeholder="e.g. Premium clean, pre-occupancy, pet sitting…"
+                      placeholder="Which service are you interested in?"
                       size="3"
                       value={fields.service}
                       onChange={handleChange}
@@ -137,7 +137,7 @@ export default function Contact() {
                     <Text size="2" weight="medium">Message</Text>
                     <TextArea
                       name="message"
-                      placeholder="Tell us about your home and when you'd like service…"
+                      placeholder="Tell us about your home and when you'd like us to come by"
                       rows={4}
                       size="3"
                       value={fields.message}
