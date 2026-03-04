@@ -2,24 +2,29 @@ import { Box, Container, Flex, Grid, Heading, Text, Card } from '@radix-ui/theme
 
 const services = [
   {
-    title: 'Standard Clean',
+    title: 'Premium Clean',
     description:
-      'Regular maintenance cleaning to keep your home fresh. Includes dusting, vacuuming, mopping, and bathroom and kitchen wipe-downs.',
+      'Dusting including picture frames, vacuuming, mopping, bathrooms, kitchen including cabinet fronts and inside microwave, ceiling fans, and change of linens.',
   },
   {
-    title: 'Deep Clean',
+    title: 'Pre-Occupancy Clean',
     description:
-      'A thorough top-to-bottom clean covering baseboards, inside appliances, cabinet fronts, and all those hard-to-reach spots.',
+      'Moving in or out? We provide the same thorough premium clean to leave the space spotless and ready for its next chapter.',
   },
   {
-    title: 'Move-In / Move-Out',
+    title: 'Seasonal Home Checking',
     description:
-      'Detailed cleaning for property transitions. We leave the space spotless for new occupants or help you get your deposit back.',
+      'Peace of mind while you\'re away — we check running water, flush toilets, and start your car to maintain the battery. Tailored to your needs.',
+  },
+  {
+    title: 'Cat Sitting',
+    description:
+      'Daily feeding and litter care for your cats while you\'re away. Reliable, attentive, and handled with the same care we bring to every home.',
   },
   {
     title: 'Recurring Service',
     description:
-      'Set it and forget it — weekly, bi-weekly, or monthly scheduling at a discounted rate to keep your home consistently clean.',
+      'Regular scheduled cleanings — weekly, bi-weekly, or monthly — so your home stays consistently clean without you having to think about it.',
   },
 ]
 
@@ -40,7 +45,7 @@ export default function Services() {
           </Heading>
         </Flex>
         <Grid
-          columns={{ initial: '1', sm: '2', md: '4' }}
+          columns={{ initial: '1', sm: '2', md: '3' }}
           gap={{ initial: '4', md: '5' }}
         >
           {services.map((service) => (

@@ -45,13 +45,12 @@ export default function About() {
               breaking the bank.
             </Text>
             <Text size={{ initial: '2', md: '3' }} color="gray" style={{ lineHeight: 1.7 }}>
-              Our team is fully insured, background-checked, and trained to deliver consistent
-              results on every visit. We use eco-friendly products that are safe for kids and pets,
-              and we show up on time — every time.
+              Our team is bonded, background-checked, and trained to deliver consistent
+              results on every visit. We show up on time — every time.
             </Text>
             <Flex justify="between" mt="4">
               <Flex direction="column" gap="1">
-                <Heading size="7" style={{ color: 'var(--brand)' }}>500+</Heading>
+                <Heading size="7" style={{ color: 'var(--brand)' }}>250+</Heading>
                 <Text size="2" color="gray">Happy Clients</Text>
               </Flex>
               <Flex direction="column" gap="1">
@@ -59,7 +58,7 @@ export default function About() {
                 <Text size="2" color="gray">Average Rating</Text>
               </Flex>
               <Flex direction="column" gap="1">
-                <Heading size="7" style={{ color: 'var(--brand)' }}>7+</Heading>
+                <Heading size="7" style={{ color: 'var(--brand)' }}>27+</Heading>
                 <Text size="2" color="gray">Years in Business</Text>
               </Flex>
             </Flex>

@@ -38,7 +38,7 @@ export default function Contact() {
               {[
                 { label: 'Phone', value: '(555) 555-0100', href: 'tel:+15555550100' },
                 { label: 'Email', value: 'hello@example.com', href: 'mailto:hello@example.com' },
-                { label: 'Hours', value: 'Mon – Sat, 8am – 6pm', href: null },
+                { label: 'Hours', value: 'Mon – Fri, 8am – 4pm', href: null },
               ].map(({ label, value, href }) => (
                 <Box
                   key={label}
