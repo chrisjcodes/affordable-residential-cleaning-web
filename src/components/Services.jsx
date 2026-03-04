@@ -9,7 +9,7 @@ const services = [
   {
     title: 'Pre-Occupancy Clean',
     description:
-      'Moving in or out? We provide the same thorough premium clean to leave the space spotless and ready for its next chapter.',
+      'Moving in or out, or returning to your vacation home from up north? We provide the same thorough premium clean to leave the space spotless and ready for you.',
   },
   {
     title: 'Seasonal Home Checking',
