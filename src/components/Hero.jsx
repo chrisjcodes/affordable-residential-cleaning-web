@@ -11,19 +11,22 @@ export default function Hero() {
         flexDirection: 'column',
       }}
     >
-      {/* Header row: logo left, nav links right */}
       <style>{`
-        .hero-header { padding: 16px 24px; display: flex; align-items: center; justify-content: center; }
-        .hero-logo { height: 130px; width: auto; }
-        .hero-nav { display: none; }
-        .hero-nav a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 20px; font-weight: 500; transition: color 0.15s; }
-        .hero-nav a:hover { color: white; }
+        /* Mobile: hide the desktop header entirely */
+        .hero-header { display: none; }
+        .hero-mobile-logo { display: block; height: 160px; width: auto; }
+
         @media (min-width: 768px) {
-          .hero-header { padding: 24px 36px; justify-content: space-between; }
-          .hero-logo { height: 120px; }
+          .hero-header { display: flex; padding: 24px 36px; align-items: center; justify-content: space-between; }
+          .hero-logo { height: 120px; width: auto; }
           .hero-nav { display: flex; align-items: center; gap: 48px; }
+          .hero-nav a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 20px; font-weight: 500; transition: color 0.15s; }
+          .hero-nav a:hover { color: white; }
+          .hero-mobile-logo { display: none; }
         }
       `}</style>
+
+      {/* Desktop: logo left + nav right */}
       <div className="hero-header">
         <img src={logo} alt="Affordable Residential Cleaning" className="hero-logo" />
         <nav className="hero-nav">
@@ -34,7 +37,7 @@ export default function Hero() {
         </nav>
       </div>
 
-      {/* Centered content */}
+      {/* Centered content — on mobile includes the logo so the whole block centers together */}
       <div style={{ flex: 1, display: 'flex', alignItems: 'center' }}>
         <Container size="3" px={{ initial: '4', md: '6' }} style={{ width: '100%' }}>
           <Flex
@@ -43,6 +46,7 @@ export default function Hero() {
             gap={{ initial: '5', md: '6' }}
             style={{ paddingBottom: '80px' }}
           >
+            <img src={logo} alt="Affordable Residential Cleaning" className="hero-mobile-logo" />
             <Heading
               size={{ initial: '7', md: '9' }}
               align="center"
