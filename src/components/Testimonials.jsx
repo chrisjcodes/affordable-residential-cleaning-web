@@ -23,6 +23,13 @@ const testimonials = [
     </>,
   },
   {
+    name: 'Fay Donaldson',
+    location: 'Sarasota, FL',
+    quote: <>
+      Liz has done housework for me for about <strong>27 years</strong>. She started out alone and has added three young women. They clean the whole house — dust, scrub, and <strong>wet mop</strong> the kitchen, tile entryway, both bathrooms, and <strong>vacuum the whole house</strong>. I am <strong>very pleased</strong> with their work and how <strong>clean and fresh</strong> the house is when they leave. I appreciate the work they do every other week.
+    </>,
+  },
+  {
     name: 'Judy Drohlich',
     location: 'Sarasota, FL',
     quote: <>
