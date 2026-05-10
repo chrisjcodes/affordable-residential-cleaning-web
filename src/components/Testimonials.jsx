@@ -30,6 +30,13 @@ const testimonials = [
     </>,
   },
   {
+    name: 'Kathy Walton',
+    location: 'Sarasota, FL',
+    quote: <>
+      We have used Liz' services for over <strong>12 years</strong>. As we do not live in Florida full-time, she consistently gives us <strong>peace of mind</strong> while we're away. From handling arrivals and departure cleanings to conducting <strong>reliable monthly home checks</strong>, she is always <strong>dependable and trustworthy</strong>. Liz has a <strong>keen eye for detail</strong> and is willing to help with anything you might need.
+    </>,
+  },
+  {
     name: 'Judy Drohlich',
     location: 'Sarasota, FL',
     quote: <>
