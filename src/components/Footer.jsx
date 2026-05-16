@@ -14,7 +14,7 @@ export default function Footer() {
           py="6"
         >
           <Text weight="bold" size="2" style={{ color: 'var(--brand)' }}>
-            Affordable Residential Cleaning
+            Affordable Residential Cleaning LLC
           </Text>
           <Text size="1" color="gray">
             © {currentYear} All rights reserved.
